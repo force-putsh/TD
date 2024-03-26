@@ -1,0 +1,14 @@
+CREATE TABLE "Post" (
+	"Id"	INTEGER NOT NULL UNIQUE,
+	"UserId"	INTEGER UNIQUE,
+	FOREIGN KEY("UserId") REFERENCES User (Id) ,
+	PRIMARY KEY("Id" AUTOINCREMENT)
+);
+
+CREATE TABLE "PostCategory" (
+	"PostID"	INTEGER,
+	"CategoryID"	INTEGER,
+	FOREIGN KEY("PostID") REFERENCES Post(Id),
+	FOREIGN KEY("CategoryID") REFERENCES Category(Id),
+	CONSTRAINT pk_post_category PRIMARY KEY (PostID, CategoryID)
+);

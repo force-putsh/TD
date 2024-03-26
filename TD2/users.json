@@ -1,0 +1,33 @@
+{
+  "user": {
+    "id": 1,
+    "nom": "Victor",
+    "posts": [
+      {
+        "id": 1,
+        "comments": []
+      },
+      {
+        "id": 2
+      }
+    ]
+  },
+  "categories": [
+    {
+      "id": 1,
+      "name": "science",
+      "posts": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "actus"
+    }
+  ]
+}
